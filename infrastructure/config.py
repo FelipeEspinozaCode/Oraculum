@@ -25,6 +25,10 @@ class Settings:
     OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "deepseek-v3.1:671b-cloud")
     OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
+        # --- PRESUPUESTO IA ---
+    MAX_DAILY_BUDGET: float = float(os.getenv('MAX_DAILY_BUDGET', '5.0'))
+    DEEPSEEK_COST_PER_1K: float = 0.0002
+
     ALLOWED_ORIGINS: list = ["*"]
 
 settings = Settings()
