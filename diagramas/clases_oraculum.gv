@@ -1,0 +1,27 @@
+digraph Clases_Oraculum {
+
+    rankdir=TB
+    graph [bgcolor="#1e1e1e"]
+
+    node [shape=record style="filled" fillcolor="#3c3c3c" color="#aaaaaa" fontcolor="#f0f0f0"]
+    edge [color="#aaaaaa"]
+
+    Usuario [label="{Usuario|+nombre:String\l+email:String\l|+login()\l+logout()}"]
+    API [label="{API Flask||+procesar_peticion()}"]
+    Servicios [label="{Servicios||+validar()\l+procesar()}"]
+    Tarot [label="{Tarot Engine||+interpretar()}"]
+    Astrologia [label="{Astrology Engine||+interpretar()}"]
+    Numerologia [label="{Numerology Engine||+interpretar()}"]
+    Modelos [label="{Modelos||+guardar()\l+calcular_promedio()}"]
+    DB [label="{Base de Datos||+insert()\l+query()}"]
+
+    Usuario -> API
+    API -> Servicios
+    Servicios -> Tarot
+    Servicios -> Astrologia
+    Servicios -> Numerologia
+    Tarot -> Modelos
+    Astrologia -> Modelos
+    Numerologia -> Modelos
+    Modelos -> DB
+}

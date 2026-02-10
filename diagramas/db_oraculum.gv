@@ -1,0 +1,14 @@
+digraph DB_Oraculum {
+
+    graph [bgcolor="#1e1e1e"]
+
+    node [shape=record style="filled" fillcolor="#3c3c3c" color="#aaaaaa" fontcolor="#f0f0f0"]
+    edge [color="#aaaaaa"]
+
+    Usuario [label="{Usuario|id:int\lnombre:str\lemail:str}"]
+    Lectura [label="{Lectura|id:int\lusuario_id:int\ltipo:str\lfecha:date}"]
+    Resultado [label="{Resultado|id:int\llectura_id:int\ldetalle:str}"]
+
+    Usuario -> Lectura
+    Lectura -> Resultado
+}

@@ -1,0 +1,23 @@
+﻿# Entorno Virtual
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Secretos y Configuración (¡CRÍTICO!)
+.env
+.flaskenv
+
+# Bases de Datos
+*.db
+*.sqlite3
+
+# Caches de herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# IDEs
+.vscode/
+.idea/

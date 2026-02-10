@@ -1,0 +1,21 @@
+digraph Arquitectura_Oraculum {
+
+    rankdir=LR
+    graph [bgcolor="#1e1e1e"]
+
+    node [shape=box style="filled" fillcolor="#3c3c3c" color="#aaaaaa" fontcolor="#f0f0f0"]
+    edge [color="#aaaaaa"]
+
+    U [label="Usuario"]
+    API [label="Rutas / API Flask"]
+    S [label="Capa de Servicios"]
+    E [label="Engines Oraculares"]
+    M [label="Modelos / Lógica"]
+    DB [label="Base de Datos"]
+
+    U -> API
+    API -> S
+    S -> E
+    E -> M
+    M -> DB
+}

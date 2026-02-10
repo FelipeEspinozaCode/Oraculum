@@ -1,0 +1,11 @@
+{
+  "felipe": {
+    "password": "$2b$12$mzpIDMnpVPXN1QaHbuWO5.H.Ahqr4nSwisachdvS0vpNGL9UPQCDK"
+  },
+  "juan": {
+    "password": "$2b$12$BBPhR1g2JAn2LNGahFNbh.KVAKp8vxc51C2BBjVmnp6QQwbzXZaBi"
+  },
+  "pepe": {
+    "password": "$2b$12$ss1nXSkupXXm2kLioKYmf.MtGFhRmaIuHYDM.arx/V8sZh.gtd20u"
+  }
+}

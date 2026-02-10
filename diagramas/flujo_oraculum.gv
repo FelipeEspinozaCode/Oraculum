@@ -1,0 +1,15 @@
+digraph Flujo_Oraculum {
+
+    rankdir=LR
+
+    graph [bgcolor="#1e1e1e"]
+
+    node [shape=box style="filled" fillcolor="#3c3c3c" color="#aaaaaa" fontcolor="#f0f0f0"]
+    edge [color="#aaaaaa" fontcolor="#f0f0f0"]
+
+    Usuario -> API
+    API -> Servicios
+    Servicios -> Engines
+    Engines -> Modelos
+    Modelos -> DB
+}

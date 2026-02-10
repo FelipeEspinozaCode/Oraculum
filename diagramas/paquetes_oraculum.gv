@@ -1,0 +1,19 @@
+digraph Paquetes_Oraculum {
+
+    rankdir=LR
+    graph [bgcolor="#1e1e1e"]
+
+    node [shape=folder style="filled" fillcolor="#3c3c3c" color="#aaaaaa" fontcolor="#f0f0f0"]
+    edge [color="#aaaaaa"]
+
+    Routes [label="routes/"]
+    Services [label="services/"]
+    Engines [label="engines/"]
+    Models [label="models/"]
+    DB [label="db/"]
+
+    Routes -> Services
+    Services -> Engines
+    Engines -> Models
+    Models -> DB
+}
