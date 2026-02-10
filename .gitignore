@@ -21,3 +21,7 @@ __pycache__/
 # IDEs
 .vscode/
 .idea/
+
+# Datos Locales (Presupuesto y Usuarios)
+data/
+
